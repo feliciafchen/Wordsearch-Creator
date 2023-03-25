@@ -349,10 +349,10 @@ void createPuzzle(char arr[][45], std::string words[100])
 
     do
     {
-        std::cout << "Enter number of words in puzzle (MAX 10): \n";
+        std::cout << "Enter number of words in puzzle (1-10): \n";
         std::cin >> numOfWords;
     }
-    while(numOfWords > 10);
+    while(numOfWords > 10 || numOfWords < 1);
 
     for(int i = 0; i < numOfWords; i++)
     {
